@@ -5,5 +5,4 @@ Set-Theme Star
 New-Alias c clear
 
 function ws { cd C:\Users\Benjamin\Workspace }
-function psconfig { code C:\Users\Benjamin\dotfiles\profile.ps1 }
-# function psreload { }
+function psconfig { code C:\Users\Benjamin\Workspace\dotfiles\profile.ps1 }
