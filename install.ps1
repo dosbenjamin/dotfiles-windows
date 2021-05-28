@@ -8,59 +8,54 @@ iwr -useb get.scoop.sh | iex
 scoop update
 
 # Add additionnal buckets to Scoop.
+scoop bucket add Ash258 https://github.com/Ash258/Scoop-Ash258.git
 scoop bucket add dorado https://github.com/chawyehsu/dorado
 scoop bucket add extras
 scoop bucket add nerd-fonts
-scoop bucket add versions
+scoop bucket add spotify https://github.com/TheRandomLabs/Scoop-Spotify.git
 
 # Install binaries with Scoop.
 scoop install composer
 scoop install git
-scoop install nvm
-scoop install php74
-
-# Create symlink for php.ini file.
-New-Item -Path C:\Users\Benjamin\php.ini -ItemType SymbolicLink -Value C:\Users\Benjamin\dotfiles\php.ini
+scoop install nvs
 
 # Install softwares with Scoop.
+scoop install 7zip
 scoop install brave
+scoop install ddu
 scoop install discord
+scoop install FacebookMessenger
 scoop install figma
-scoop install firefox
+scoop install hwinfo
+scoop install msiafterburner
+scoop install qbittorrent
 scoop install slack
+scoop install spotify-latest
 scoop install steam
+scoop install vlc
 scoop install vscode
 scoop install windows-terminal
+scoop install winscp
 scoop install whatsapp
 
 # Install Jet Brains Mono font with scoop.
 scoop install jetbrainsmono-nf-mono
 
-# Install Node 14 with nvm.
-nvm install 14.15.4
-nvm use 14.15.4
+# Install Node LTS with nvs.
+nvs add lts
+nvs use lts
+nvs link lts
 
-# Update php.ini scan folder.
-$env:PHP_INI_SCAN_DIR = "C:\Users\Benjamin;"
-
-# Install Valet with composer.
-composer global require cretueusebiu/valet-windows
-valet install
-
-# Install Adminer.
-mkdir C:\Users\Benjamin\Adminer
-Invoke-WebRequest -Uri "https://github.com/vrana/adminer/releases/download/v4.7.8/adminer-4.7.8-en.php" -OutFile "C:\Users\Benjamin\Adminer\index.php"
-cd C:\Users\Benjamin\Adminer
-valet link adminer
-valet secure
+# Install binaries with npm.
+npm i -g yarn
 
 # Install oh-my-posh and posh-git.
 Install-Module oh-my-posh -Scope CurrentUser
 Install-Module posh-git -Scope CurrentUser
 
 # Create symlink for PowerShell profile.
-New-Item -Path C:\Users\Benjamin\Documents\WindowsPowerShell\profile.ps1 -ItemType SymbolicLink -Value C:\Users\Benjamin\dotfiles\profile.ps1
+New-Item -Path C:\Users\Benjamin\Documents\WindowsPowerShell\profile.ps1 -ItemType SymbolicLink -Value C:\Users\Benjamin\Workspace\dotfiles\profile.ps1
 
-# Create symlink for Windows Terminal settings. 
+# Create symlink for Windows Terminal settings.
 cd C:\Users\Benjamin\AppData\Local\Microsoft\Windows` Terminal; rm settings.json
-New-Item -Path C:\Users\Benjamin\AppData\Local\Microsoft\Windows` Terminal\settings.json -ItemType SymbolicLink -Value C:\Users\Benjamin\dotfiles\terminal-settings.json
+New-Item -Path C:\Users\Benjamin\AppData\Local\Microsoft\Windows` Terminal\settings.json -ItemType SymbolicLink -Value C:\Users\Benjamin\Workspace\dotfiles\terminal-settings.json
