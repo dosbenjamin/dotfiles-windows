@@ -54,7 +54,7 @@ Install-Module oh-my-posh -Scope CurrentUser
 Install-Module posh-git -Scope CurrentUser
 
 # Create symlink for PowerShell profile.
-New-Item -Path C:\Users\Benjamin\Documents\WindowsPowerShell\profile.ps1 -ItemType SymbolicLink -Value C:\Users\Benjamin\Workspace\dotfiles\profile.ps1
+New-Item -Path D:\Users\Benjamin\Documents\WindowsPowerShell\profile.ps1 -ItemType SymbolicLink -Value C:\Users\Benjamin\Workspace\dotfiles\profile.ps1
 
 # Create symlink for Windows Terminal settings.
 cd C:\Users\Benjamin\AppData\Local\Microsoft\Windows` Terminal; rm settings.json
