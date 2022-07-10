@@ -1,61 +1,71 @@
-# Give permission needed to install Scoop.
-Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+# Scoop
+# 1. Install Scoop
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
 
-# Install Scoop.
-iwr -useb get.scoop.sh | iex
-
-# Update Scoop.
+# 2. Update
 scoop update
 
-# Add additionnal buckets to Scoop.
-scoop bucket add Ash258 https://github.com/Ash258/Scoop-Ash258.git
-scoop bucket add dorado https://github.com/chawyehsu/dorado
+# 3. Add additionnal buckets
 scoop bucket add extras
 scoop bucket add nerd-fonts
-scoop bucket add spotify https://github.com/TheRandomLabs/Scoop-Spotify.git
 
-# Install binaries with Scoop.
-scoop install composer
-scoop install git
-scoop install nvs
+# 3. Install fonts
+scoop install JetBrains-Mono
 
-# Install softwares with Scoop.
-scoop install 7zip
-scoop install brave
+# 4. Install software
+scoop install capframex
 scoop install ddu
-scoop install discord
-scoop install FacebookMessenger
-scoop install figma
-scoop install hwinfo
-scoop install msiafterburner
-scoop install qbittorrent
-scoop install slack
-scoop install spotify-latest
-scoop install steam
-scoop install vlc
-scoop install vscode
-scoop install windows-terminal
-scoop install winscp
-scoop install whatsapp
+scoop install islc
+scoop install rtss
+scoop install winget
 
-# Install Jet Brains Mono font with scoop.
-scoop install jetbrainsmono-nf-mono
+# 5. Clean
+scoop cleanup *
+scoop cache rm *
 
-# Install Node LTS with nvs.
-nvs add lts
-nvs use lts
-nvs link lts
+# Winget
+# 1. Update
+winget source update
+winget upgrade
 
-# Install binaries with npm.
-npm i -g yarn
+# 2. Install DirectX & VCRedist AIO
+winget install -e --id Microsoft.DirectX
+winget install -e --id Microsoft.VC++2005Redist-x86
+winget install -e --id Microsoft.VC++2005Redist-x64
+winget install -e --id Microsoft.VC++2008Redist-x86
+winget install -e --id Microsoft.VC++2008Redist-x64
+winget install -e --id Microsoft.VC++2010Redist-x86
+winget install -e --id Microsoft.VC++2010Redist-x64
+winget install -e --id Microsoft.VC++2012Redist-x86
+winget install -e --id Microsoft.VC++2012Redist-x64
+winget install -e --id Microsoft.VC++2013Redist-x86
+winget install -e --id Microsoft.VC++2013Redist-x64
+winget install -e --id Microsoft.VC++2015-2022Redist-x86
+winget install -e --id Microsoft.VC++2015-2022Redist-x64
 
-# Install oh-my-posh and posh-git.
-Install-Module oh-my-posh -Scope CurrentUser
-Install-Module posh-git -Scope CurrentUser
+# 3. Install software
+winget install -e --id 7zip.7zip
+winget install -e --id AgileBits.1Password
+winget install -e --id ALCPU.CoreTemp
+winget install -e --id BraveSoftware.BraveBrowser
+winget install -e --id Debian.Debian
+winget install -e --id Discord.Discord
+winget install -e --id ElectronicArts.EADesktop
+winget install -e --id Figma.Figma
+winget install -e --id Google.Drive
+winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Microsoft.WindowsTerminal
+winget install -e --id qBittorrent.qBittorrent
+winget install -e --id Resplendence.LatencyMon
+winget install -e -i --id RiotGames.LeagueOfLegends.EUW
+winget install -e --id SlackTechnologies.Slack
+winget install -e --id Spotify.Spotify
+winget install -e --id TablePlus.TablePlus
+winget install -e --id Valve.Steam
+winget install -e --id VideoLAN.VLC
+winget install -e --id WhatsApp.WhatsApp
 
-# Create symlink for PowerShell profile.
-New-Item -Path D:\Users\Benjamin\Documents\WindowsPowerShell\profile.ps1 -ItemType SymbolicLink -Value C:\Users\Benjamin\Workspace\dotfiles\profile.ps1
-
-# Create symlink for Windows Terminal settings.
-cd C:\Users\Benjamin\AppData\Local\Microsoft\Windows` Terminal; rm settings.json
-New-Item -Path C:\Users\Benjamin\AppData\Local\Microsoft\Windows` Terminal\settings.json -ItemType SymbolicLink -Value C:\Users\Benjamin\Workspace\dotfiles\terminal-settings.json
+# Windows Terminal
+Remove-Item 'C:\Users\Benjamin\AppData\Local\Microsoft\Windows Terminal\settings.json'
+New-Item -ItemType SymbolicLink -Path 'C:\Users\Benjamin\AppData\Local\Microsoft\Windows Terminal\settings.json' -Value 'terminal-settings.json'
