@@ -4,6 +4,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 
 # 2. Update
+scoop install git
 scoop update
 
 # 3. Add additionnal buckets
