@@ -1,6 +1,5 @@
 # Scoop
 # 1. Install Scoop
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 
 # 2. Install git for update and buckets
@@ -76,7 +75,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 # 2. Install
 wsl --install
 wsl --set-default-version 2
-wsl --install -d Debian
+wsl --install -d Ubuntu-20.04
 
 # Windows Terminal
 Remove-Item 'C:\Users\Benjamin\AppData\Local\Microsoft\Windows Terminal\settings.json'
