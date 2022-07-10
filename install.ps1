@@ -49,7 +49,6 @@ winget install -e --id 7zip.7zip
 winget install -e --id AgileBits.1Password
 winget install -e --id ALCPU.CoreTemp
 winget install -e --id BraveSoftware.BraveBrowser
-winget install -e --id Debian.Debian
 winget install -e --id Discord.Discord
 winget install -e --id ElectronicArts.EADesktop
 winget install -e --id Figma.Figma
@@ -65,6 +64,16 @@ winget install -e --id TablePlus.TablePlus
 winget install -e --id Valve.Steam
 winget install -e --id VideoLAN.VLC
 winget install -e --id WhatsApp.WhatsApp
+
+# WSL
+# 1. Enable Windows features
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+
+# 2. Install
+wsl --install
+wsl --set-default-version 2
+wsl --install -d Debian
 
 # Windows Terminal
 Remove-Item 'C:\Users\Benjamin\AppData\Local\Microsoft\Windows Terminal\settings.json'
