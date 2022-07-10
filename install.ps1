@@ -3,25 +3,27 @@
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm get.scoop.sh | iex
 
-# 2. Update
+# 2. Install git for update and buckets
 scoop install git
+
+# 3. Update
 scoop update
 
-# 3. Add additionnal buckets
+# 4. Add additionnal buckets
 scoop bucket add extras
 scoop bucket add nerd-fonts
 
-# 3. Install fonts
+# 5. Install fonts
 scoop install JetBrains-Mono
 
-# 4. Install software
+# 6. Install software
 scoop install capframex
 scoop install ddu
 scoop install islc
 scoop install rtss
 scoop install winget
 
-# 5. Clean
+# 7. Clean
 scoop cleanup *
 scoop cache rm *
 
