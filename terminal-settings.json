@@ -1,0 +1,80 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
+    },
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    }
+  ],
+  "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+  "profiles": {
+    "defaults": {
+      "bellStyle": "none",
+      "colorScheme": "Ayu Mirage",
+      "cursorShape": "filledBox",
+      "font": {
+        "face": "JetBrains Mono"
+      },
+      "opacity": 85,
+      "padding": "16",
+      "useAcrylic": true
+    },
+    "list": [
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "Windows PowerShell"
+      },
+      {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "background": "#1F2430",
+      "black": "#171B24",
+      "blue": "#6DCBFA",
+      "brightBlack": "#686868",
+      "brightBlue": "#73D0FF",
+      "brightCyan": "#95E6CB",
+      "brightGreen": "#D5FF80",
+      "brightPurple": "#DFBFFF",
+      "brightRed": "#F28779",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFD173",
+      "cursorColor": "#FFCC66",
+      "cyan": "#90E1C6",
+      "foreground": "#CCCAC2",
+      "green": "#87D96C",
+      "name": "Ayu Mirage",
+      "purple": "#DABAFA",
+      "red": "#ED8274",
+      "selectionBackground": "#33415E",
+      "white": "#C7C7C7",
+      "yellow": "#FACC6E"
+    }
+  ]
+}
