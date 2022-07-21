@@ -189,7 +189,7 @@ reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v Star
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v Start_TrackProgs /t REG_DWORD /d 0 /f
 
 ## Taskbar
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Search /v SearchboxTaskbar /t REG_DWORD /d 0 /f 
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Search /v SearchboxTaskbar /t REG_DWORD /d 0 /f
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Search /v SearchboxTaskbarMode /t REG_DWORD /d 0 /f
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v ShowTaskViewButton /t REG_DWORD /d 0 /f
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v TaskbarSh /t REG_DWORD /d 0 /f
