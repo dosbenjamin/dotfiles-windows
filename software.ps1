@@ -51,6 +51,7 @@ winget install -e --id Microsoft.VC++2015-2022Redist-x64
 winget install -e --id 9WZDNCRF0083
 winget install -e --id AgileBits.1Password
 winget install -e --id ALCPU.CoreTemp
+winget install -e --id BleachBit.BleachBit
 winget install -e --id Discord.Discord
 winget install -e --id Docker.DockerDesktop
 winget install -e --id ElectronicArts.EADesktop
