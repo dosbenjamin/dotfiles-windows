@@ -21,6 +21,7 @@ scoop install capframex
 scoop install ddu
 scoop install islc
 scoop install rtss
+scoop install msiafterburner
 scoop install nsudo
 
 ## Clean
@@ -49,6 +50,7 @@ winget install -e --id Microsoft.VC++2015-2022Redist-x64
 
 ## Install software
 winget install -e --id 9WZDNCRF0083
+winget install -e --id XP8BT8DW290MPQ
 winget install -e --id AgileBits.1Password
 winget install -e --id ALCPU.CoreTemp
 winget install -e --id BleachBit.BleachBit
