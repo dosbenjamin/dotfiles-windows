@@ -51,6 +51,7 @@ winget install -e --id Microsoft.VC++2015-2022Redist-x64
 ## Install software
 winget install -e --id 9WZDNCRF0083
 winget install -e --id XP8BT8DW290MPQ
+winget install -e --id XPFFTQ037JWMHS
 winget install -e --id AgileBits.1Password
 winget install -e --id ALCPU.CoreTemp
 winget install -e --id BleachBit.BleachBit
@@ -60,6 +61,7 @@ winget install -e --id ElectronicArts.EADesktop
 winget install -e --id Figma.Figma
 winget install -e --id Google.Drive
 winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Mozilla.Firefox
 winget install -e --id qBittorrent.qBittorrent
 winget install -e --id Resplendence.LatencyMon
 winget install -e -i --id RiotGames.LeagueOfLegends.EUW
