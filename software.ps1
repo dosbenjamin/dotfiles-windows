@@ -61,6 +61,7 @@ winget install -e --id ElectronicArts.EADesktop
 winget install -e --id Figma.Figma
 winget install -e --id Google.Drive
 winget install -e --id Logitech.GHUB
+winget install -e --id Microsoft.PowerToys
 winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Mozilla.Firefox
 winget install -e --id qBittorrent.qBittorrent
