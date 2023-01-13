@@ -59,6 +59,7 @@ winget install -e --id Discord.Discord
 winget install -e --id Docker.DockerDesktop
 winget install -e --id ElectronicArts.EADesktop
 winget install -e --id Figma.Figma
+winget install -e --id Axosoft.GitKraken
 winget install -e --id Google.Drive
 winget install -e --id Logitech.GHUB
 winget install -e --id Microsoft.PowerToys
