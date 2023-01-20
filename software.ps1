@@ -68,7 +68,6 @@ winget install -e --id Mozilla.Firefox
 winget install -e --id qBittorrent.qBittorrent
 winget install -e --id Resplendence.LatencyMon
 winget install -e -i --id RiotGames.LeagueOfLegends.EUW
-winget install -e --id SlackTechnologies.Slack
 winget install -e --id Spotify.Spotify
 winget install -e --id TablePlus.TablePlus
 winget install -e --id Valve.Steam
