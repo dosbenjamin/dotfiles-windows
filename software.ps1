@@ -13,9 +13,6 @@ scoop update
 scoop bucket add extras
 scoop bucket add nerd-fonts
 
-## Install fonts
-scoop install JetBrains-Mono
-
 ## Install software
 scoop install capframex
 scoop install ddu
@@ -23,6 +20,10 @@ scoop install islc
 scoop install rtss
 scoop install msiafterburner
 scoop install nsudo
+scoop install sudo
+
+## Install fonts
+sudo scoop install -g JetBrains-Mono
 
 ## Clean
 scoop cleanup *
