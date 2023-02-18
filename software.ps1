@@ -55,6 +55,7 @@ winget install -e --id XP8BT8DW290MPQ
 winget install -e --id XPFFTQ037JWMHS
 winget install -e --id AgileBits.1Password
 winget install -e --id ALCPU.CoreTemp
+winget install -e --id Axosoft.GitKraken
 winget install -e --id BleachBit.BleachBit
 winget install -e --id Discord.Discord
 winget install -e --id Docker.DockerDesktop
