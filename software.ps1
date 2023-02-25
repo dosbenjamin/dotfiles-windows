@@ -55,13 +55,11 @@ winget install -e --id XP8BT8DW290MPQ
 winget install -e --id XPFFTQ037JWMHS
 winget install -e --id AgileBits.1Password
 winget install -e --id ALCPU.CoreTemp
-winget install -e --id Axosoft.GitKraken
 winget install -e --id BleachBit.BleachBit
 winget install -e --id Discord.Discord
 winget install -e --id Docker.DockerDesktop
 winget install -e --id ElectronicArts.EADesktop
 winget install -e --id Figma.Figma
-winget install -e --id Axosoft.GitKraken
 winget install -e --id Google.Drive
 winget install -e --id Logitech.GHUB
 winget install -e --id Microsoft.PowerToys
